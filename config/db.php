@@ -1,7 +1,7 @@
 <?php
 // config/db.php
 $host = '127.0.0.1';
-$db   = 'ems_db';
+$db   = 'ems_db25';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
