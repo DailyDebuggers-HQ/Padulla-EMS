@@ -1,1 +1,0 @@
-<?php $c = file_get_contents("C:/xampp/htdocs/EMS/modules/payments/pay.php"); $c = preg_replace("/^\xEF\xBB\xBF/", "", $c); file_put_contents("C:/xampp/htdocs/EMS/modules/payments/pay.php", $c); echo "Done!"; ?>
