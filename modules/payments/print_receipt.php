@@ -71,7 +71,7 @@ if(!$payment) die("Payment record not found.");
         </table>
 
         <div class="amount-box">
-            <h3>₱ <?= number_format($payment['amount'], 2) ?></h3>
+            <h3>&#8369; <?= number_format($payment['amount'], 2) ?></h3>
             <p>Amount Paid</p>
         </div>
 

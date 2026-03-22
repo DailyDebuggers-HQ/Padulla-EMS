@@ -97,9 +97,9 @@ $balance = $enrollment['assessed_amount'] - $total_paid;
                     <td><?= date('M d, Y', strtotime($enrollment['enrollment_date'])) ?></td>
                     <td>Assessment</td>
                     <td>Tuition and Miscellaneous Fees</td>
-                    <td class="text-end">₱<?= number_format($enrollment['assessed_amount'], 2) ?></td>
+                    <td class="text-end">&#8369;<?= number_format($enrollment['assessed_amount'], 2) ?></td>
                     <td class="text-end">-</td>
-                    <td class="text-end fw-bold">₱<?= number_format($enrollment['assessed_amount'], 2) ?></td>
+                    <td class="text-end fw-bold">&#8369;<?= number_format($enrollment['assessed_amount'], 2) ?></td>
                 </tr>
                 
                 <!-- Payments -->
@@ -113,8 +113,8 @@ $balance = $enrollment['assessed_amount'] - $total_paid;
                         <td><?= htmlspecialchars($p['or_number']) ?></td>
                         <td><?= htmlspecialchars($p['remarks'] ?: 'Payment') ?></td>
                         <td class="text-end">-</td>
-                        <td class="text-end text-success">₱<?= number_format($p['amount'], 2) ?></td>
-                        <td class="text-end fw-bold">₱<?= number_format($running_balance, 2) ?></td>
+                        <td class="text-end text-success">&#8369;<?= number_format($p['amount'], 2) ?></td>
+                        <td class="text-end fw-bold">&#8369;<?= number_format($running_balance, 2) ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -125,16 +125,16 @@ $balance = $enrollment['assessed_amount'] - $total_paid;
                 <div class="summary-box bg-light">
                     <div class="d-flex justify-content-between mb-2">
                         <span>Total Assessment:</span>
-                        <strong>₱<?= number_format($enrollment['assessed_amount'], 2) ?></strong>
+                        <strong>&#8369;<?= number_format($enrollment['assessed_amount'], 2) ?></strong>
                     </div>
                     <div class="d-flex justify-content-between mb-2">
                         <span>Total Payments:</span>
-                        <strong class="text-success">₱<?= number_format($total_paid, 2) ?></strong>
+                        <strong class="text-success">&#8369;<?= number_format($total_paid, 2) ?></strong>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between fs-5 text-danger">
                         <span><strong>Current Balance:</strong></span>
-                        <strong>₱<?= number_format($balance, 2) ?></strong>
+                        <strong>&#8369;<?= number_format($balance, 2) ?></strong>
                     </div>
                 </div>
             </div>

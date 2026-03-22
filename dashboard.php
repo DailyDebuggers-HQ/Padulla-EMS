@@ -40,7 +40,7 @@ $totalPayments = $pdo->query("SELECT SUM(amount) FROM payments")->fetchColumn();
         <div class="card text-white bg-info mb-3 shadow-sm rounded">
             <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-money-bill-wave"></i> Total Payments</h5>
-                <p class="card-text display-4">₱<?= number_format($totalPayments ?: 0, 2) ?></p>
+                <p class="card-text display-4">&#8369;<?= number_format($totalPayments ?: 0, 2) ?></p>
             </div>
         </div>
     </div>

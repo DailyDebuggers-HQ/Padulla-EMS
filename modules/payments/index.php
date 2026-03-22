@@ -76,9 +76,9 @@ $enrollments = $stmt->fetchAll();
                             <td><span class="badge bg-secondary"><?= htmlspecialchars($row['student_id']) ?></span></td>
                             <td class="fw-bold"><?= htmlspecialchars($row['last_name'] . ', ' . $row['first_name']) ?></td>
                             <td><?= htmlspecialchars($row['academic_year'] . ' - ' . $row['semester_id']) ?></td>
-                            <td>₱<?= number_format($row['assessed_amount'], 2) ?></td>
-                            <td class="text-success">₱<?= number_format($row['total_paid'], 2) ?></td>
-                            <td><span class="badge <?= $badgeClass ?>">₱<?= number_format(max(0, $balance), 2) ?></span></td>
+                            <td>&#8369;<?= number_format($row['assessed_amount'], 2) ?></td>
+                            <td class="text-success">&#8369;<?= number_format($row['total_paid'], 2) ?></td>
+                            <td><span class="badge <?= $badgeClass ?>">&#8369;<?= number_format(max(0, $balance), 2) ?></span></td>
                             <td>
                                 <a href="pay.php?enrollment_id=<?= $row['enrollment_id'] ?>" class="btn btn-sm btn-primary">
                                     <i class="fas fa-coins"></i> Manage Payments

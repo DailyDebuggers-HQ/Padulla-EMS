@@ -142,22 +142,22 @@ if ($checkEntry->rowCount() > 0) {
             <div class="card-body">
                 <table class="table table-sm table-borderless">
                     <tr>
-                        <td>Tuition (₱<?= number_format($TUITION_PER_UNIT, 2) ?> x <?= number_format($total_units, 2) ?>)</td>
-                        <td class="text-end">₱<?= number_format($total_tuition, 2) ?></td>
+                        <td>Tuition (&#8369;<?= number_format($TUITION_PER_UNIT, 2) ?> x <?= number_format($total_units, 2) ?>)</td>
+                        <td class="text-end">&#8369;<?= number_format($total_tuition, 2) ?></td>
                     </tr>
                     <tr>
                         <td>Miscellaneous Fee</td>
-                        <td class="text-end">₱<?= number_format($MISC_FEE, 2) ?></td>
+                        <td class="text-end">&#8369;<?= number_format($MISC_FEE, 2) ?></td>
                     </tr>
                     <?php if($total_lab_fees > 0): ?>
                     <tr>
                         <td>Laboratory Fees</td>
-                        <td class="text-end">₱<?= number_format($total_lab_fees, 2) ?></td>
+                        <td class="text-end">&#8369;<?= number_format($total_lab_fees, 2) ?></td>
                     </tr>
                     <?php endif; ?>
                     <tr class="border-top fw-bold fs-5 text-primary">
                         <td>Total Amount Due</td>
-                        <td class="text-end">₱<?= number_format($total_assessment, 2) ?></td>
+                        <td class="text-end">&#8369;<?= number_format($total_assessment, 2) ?></td>
                     </tr>
                 </table>
 

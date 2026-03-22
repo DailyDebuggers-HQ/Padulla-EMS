@@ -113,7 +113,7 @@ $schedules = $schedStmt->fetchAll();
             <div class="col-6">
                 <table class="table table-sm table-borderless w-75">
                     <tr><td class="fw-bold">Assessment:</td><td></td></tr>
-                    <tr><td>Total Amount Assessed:</td><td class="fw-bold">₱<?= number_format($enrollment['assessed_amount'], 2) ?></td></tr>
+                    <tr><td>Total Amount Assessed:</td><td class="fw-bold">&#8369;<?= number_format($enrollment['assessed_amount'], 2) ?></td></tr>
                 </table>
             </div>
             <div class="col-6 text-center mt-5">
