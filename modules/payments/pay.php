@@ -83,16 +83,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['amount'])) {
                 <hr>
                 <div class="d-flex justify-content-between mb-2">
                     <span>Total Assessed:</span>
-                    <span class="fw-bold">â‚±<?= number_format($enrollment['assessed_amount'], 2) ?></span>
+                    <span class="fw-bold">&#8369;<?= number_format($enrollment['assessed_amount'], 2) ?></span>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
                     <span>Total Paid:</span>
-                    <span class="text-success fw-bold">- â‚±<?= number_format($total_paid, 2) ?></span>
+                    <span class="text-success fw-bold">- &#8369;<?= number_format($total_paid, 2) ?></span>
                 </div>
                 <div class="d-flex justify-content-between mt-3 p-2 bg-light border rounded">
                     <span class="fs-5">Current Balance:</span>
                     <span class="fs-5 <?= $balance > 0 ? 'text-danger fw-bold' : 'text-success fw-bold' ?>">
-                        â‚±<?= number_format(max(0, $balance), 2) ?>
+                        &#8369;<?= number_format(max(0, $balance), 2) ?>
                     </span>
                 </div>
             </div>
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['amount'])) {
                             <input type="text" name="or_number" class="form-control" placeholder="e.g. OR-100234" required>
                         </div>
                         <div class="mb-3">
-                            <label>Amount (â‚±) <span class="text-danger">*</span></label>
+                            <label>Amount (&#8369;) <span class="text-danger">*</span></label>
                             <input type="number" step="0.01" max="<?= $balance ?>" name="amount" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['amount'])) {
                                 <tr>
                                     <td><?= date('M d, Y h:i A', strtotime($p['payment_date'])) ?></td>
                                     <td><span class="badge bg-secondary"><?= htmlspecialchars($p['or_number']) ?></span></td>
-                                    <td class="text-success fw-bold">â‚±<?= number_format($p['amount'], 2) ?></td>
+                                    <td class="text-success fw-bold">&#8369;<?= number_format($p['amount'], 2) ?></td>
                                     <td><?= htmlspecialchars($p['remarks']) ?></td>
                                       <td><a href="print_receipt.php?id=<?= $p['payment_id'] ?>" target="_blank" class="btn btn-sm btn-outline-primary" title="Print Receipt"><i class="fas fa-print"></i></a></td>
                                 </tr>

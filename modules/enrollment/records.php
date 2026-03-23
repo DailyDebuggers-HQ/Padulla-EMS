@@ -70,7 +70,7 @@ $records = $stmt->fetchAll();
                             <td class="fw-bold"><?= htmlspecialchars($rec['last_name'] . ', ' . $rec['first_name']) ?></td>
                             <td><?= htmlspecialchars($rec['program_code']) ?></td>
                             <td><?= htmlspecialchars($rec['total_units']) ?></td>
-                            <td>₱<?= number_format($rec['assessed_amount'], 2) ?></td>
+                            <td>&#8369;<?= number_format($rec['assessed_amount'], 2) ?></td>
                             <td><span class="badge bg-success"><?= htmlspecialchars($rec['status']) ?></span></td>
                             <td>
                                 <a href="print_cor.php?id=<?= $rec['enrollment_id'] ?>" target="_blank" class="btn btn-sm btn-outline-primary">
